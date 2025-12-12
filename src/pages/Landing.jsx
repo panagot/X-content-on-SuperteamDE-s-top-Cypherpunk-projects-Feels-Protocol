@@ -756,16 +756,12 @@ let sig = client.swap(
 
             <div className="space-y-3">
               {[
-                { num: 1, title: "Hook - The Heist Setup", content: "Imagine: You're in a DeFi heist. Devs promise moonshots, you ape in... then rug. Liquidity vanishes, your bag hits zero. $149M stolen monthly on Solana. But what if the vault had math locks no thief could crack? Enter Feels.fun – the DEX where rugs are mathematically murdered. Born from Superteam Germany's cypherpunk brains at Colosseum Hackathon. Buckle up.", tags: ["#SuperteamGermany"] },
-                { num: 2, title: "What It Does", content: "Feels is a hub-and-spoke DEX on Solana: All tokens route through FeelsSOL (JitoSOL-wrapped hub). Max 2 hops per swap—predictable, efficient. Spot, lending, leverage—all unified. From GitHub: 'All liquidity pools must include FeelsSOL as one side.' Prototype live: Trade $SOL, $USDC, watch the magic." },
-                { num: 3, title: "The Innovation Bomb", content: "The killer feature? The monotonic floor ratchet – a DeFi innovation that dynamically ratchets prices up via fees + JitoSOL yields. From GitHub: 'Implements a monotonic floor ratchet mechanism to protect against price drops.' Devs can't drain. Price can only go up or hold—never drop. Liquidations? Obsolete. This isn't DeFi 1.0. It's armored AF." },
-                { num: 4, title: "Phases Breakdown", content: "Feels.fun rolls out in phases – blog gold: Phase 1: Spot Trading (LIVE) – Fees auto-boost reserves. Phase 2: Lending – Borrow against $FEELS, zero liq risk. Phase 3: Leverage – Organic longs/shorts, market-driven rates. No oracles, no exploits." },
-                { num: 5, title: "Solana Leverage", content: "Why Solana? Feels.fun breathes its ecosystem: 65k TPS = Unified pool scales without hiccups. &lt;$0.0001 fees = Reserves compound 24/7. JitoSOL yields = Floor rises even in bear markets. Docs confirm: 'Solana's finality ensures instant, trustless floor updates.'" },
-                { num: 6, title: "Superteam Germany Spotlight", content: "Huge props to @SuperteamDE – the Berlin crew fueling Europe's Solana renaissance. Feels.fun: Crafted at Colosseum Cypherpunk Hackathon, one of their Top 5 picks. Team (@0xlate, @hxrts, @onr_gg) turned cypherpunk ideals into code that protects builders." },
-                { num: 7, title: "Impact Deep Dive", content: "Real talk: $149M rug losses/month? Feels.fun could slash that by making 98.6% token deaths... optional. Easier for noobs: One pool, one floor, pure fun. For degens: Leverage without the liquidation lottery. From docs: 'Redirects MEV to holders – DeFi where you feel the wins.'" },
-                { num: 8, title: "Demo Call", content: "Don't just read – feel it. Staging: https://staging.feels.fun/ – swap tokens, eye the pool. Docs: https://staging.feels.fun/docs. GitHub: https://github.com/FeelsDEX/feels. Blog: https://staging.feels.fun/blog. Pro tip: Calc your own floor. Reserves $1M / Supply 1B = $0.001 base → ratchet up with yields." },
-                { num: 9, title: "Engagement Poll", content: "Solana DeFi upgrade: What's Feels.fun fixing first for you? 🧳 Rugs forever | 💀 Liq nightmares | 💸 Fee black holes | 🚀 All – gimme! Vote + RT if you're ready for unruggable." },
-                { num: 10, title: "Memorable Close", content: "Feels: Where Solana's speed meets German precision, rugs meet their ratchet doom. Big love to @SuperteamDE for spotlighting this Colosseum beast – innovation that feels like victory. Follow @FeelsSol for updates. Try it. Build on it. Win with it." },
+                { num: 1, title: "Hook - The Heist Setup", content: "Devs promise moonshots, you ape in... then rug. Liquidity vanishes, your bag hits zero. $149M are stolen monthly on Solana. But what if the vault had math locks no thief could crack? Enter Feels.fun @FeelsSol The DEX where rugs are mathematically murdered. Born from Superteam Germany's cypherpunk brains at Colosseum Hackathon. Buckle up.", tags: ["#SuperteamGermany"] },
+                { num: 2, title: "What It Does", content: "Feels is a hub-and-spoke DEX on Solana: All tokens route through FeelsSOL (JitoSOL-wrapped hub). Max 2 hops per swap, predictable, efficient. Spot, lending, leverage all unified. All liquidity pools must include FeelsSOL as one side." },
+                { num: 3, title: "The Innovation Bomb", content: "The killer feature? The monotonic floor ratchet, a DeFi innovation that dynamically ratchets prices up via fees + JitoSOL yields. Feels implements a monotonic floor ratchet mechanism to protect against price drops. Devs can't drain. Price can only go up or hold, never drop. Liquidations? Obsolete." },
+                { num: 4, title: "Phases Breakdown", content: "Feels.fun is rolling out in phases. Phase 1: Spot Trading (currently LIVE) Fees auto-boost reserves. Phase 2: Lending – Borrow against $FEELS, zero liq risk. Phase 3: Leverage. Organic longs/shorts, market-driven rates. No oracles, no exploits." },
+                { num: 5, title: "Solana Leverage", content: "Why Solana? Feels.fun breathes its ecosystem: 65k TPS = Unified pool scales without hiccups. $0.0001 fees = Reserves compound 24/7. JitoSOL yields = Floor rises even in bear markets. Docs confirm: Solana's finality ensures instant, trustless floor updates." },
+                { num: 6, title: "Memorable Close", content: "Feels: Where Solana's speed meets German precision, rugs meet their ratchet doom. Big love to @SuperteamDE for spotlighting this Colosseum beast innovation that feels like victory. Follow @FeelsSol for updates. Try it. Build on it. Win with it." },
               ].map((tweet, idx) => (
                 <div
                   key={idx}
@@ -777,7 +773,7 @@ let sig = client.swap(
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
-                        <span className="text-xs font-semibold text-purple-400">Tweet {tweet.num}/10</span>
+                        <span className="text-xs font-semibold text-purple-400">Tweet {tweet.num}/6</span>
                         <span className="text-gray-600">•</span>
                         <span className="text-xs text-gray-500">{tweet.title}</span>
                       </div>
